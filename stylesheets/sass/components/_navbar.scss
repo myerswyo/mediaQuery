@@ -1,13 +1,81 @@
+
+
+
 //classes
 
 .navBar{
   width: 100vw;
-  height: 5vh;
+  height: 10vh;
   border: 1px solid black;
   display: flex;
+  align-items: center;
+  justify-content: center;
+
     ul{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        border: 1px solid red;
+        justify-content: space-between;
+        align-items: flex-end;
+        background-color: #5F3326;
+
+
+
       li{
+        font-size: 2em;
+        font-family: "Butler";
+        border: 1px solid green;
+        color: #FFF;
 
       }
     }
 }
+
+// Media Conditions
+
+@media (max-width: 750px) {
+
+  .navBar{
+    width: 45vw;
+    height: 100vh;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+      .icon{
+        height: 33%;
+        width: 100%;
+        border: 1px solid white;
+        background: url("imgs/marioCoin.png");
+        background-size: contain;
+        background-repeat:no-repeat;
+      }
+
+      ul{
+          width: 100%;
+          height: 100%;
+          display: flex;
+          border: 1px solid red;
+          flex-direction: column;
+          align-items: flex-start;
+          background-color: #5F3326;
+
+
+
+        li{
+          height: 33%;
+          width: 100%;
+          font-size: 2em;
+          font-family: "Butler";
+          border: 1px solid green;
+          color: #FFF;
+
+        }
+      }
+  }
+
+
+
+ }
